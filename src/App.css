@@ -201,6 +201,9 @@ nav.navbar .navbar-toggler-icon {
 nav.navbar .name {
   color: #FFFFFF;
 }
+
+
+
 nav.navbar .navbar-toggler-icon:focus {
   border-bottom: 2px solid #fff;
 }
@@ -618,4 +621,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+/************ Video Css ************/
+
+.video {
+  background-image: url('./assets/img/banner-bg.png');
+}
+
+.video .window{
+  background-image: url('./assets/img/banner-bg.png');
+}
+
+.modal-body-bg {
+  background-image: url('./assets/img/banner-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 0; /* Adjust if necessary */
 }

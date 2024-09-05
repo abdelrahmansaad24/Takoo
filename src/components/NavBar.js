@@ -13,9 +13,16 @@ export const NavBar = () => {
 
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
-    const handleClick = (event) => {
+
+    const handleY = (event) => {
         event.preventDefault();
-        window.location.href = 'https://reactjs.org';
+        window.open("http://www.youtube.com","_blank")
+        //window.location.href = 'https://reactjs.org';
+    };
+    const handleW = (event) => {
+        event.preventDefault();
+        window.open("https://wa.me/+201099845832","_blank")
+        //window.location.href = 'https://reactjs.org';
     };
 
     useEffect(() => {
@@ -55,11 +62,11 @@ export const NavBar = () => {
                         </Nav>
                         <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" onClick={handleClick}/></a>
+                <a href="#"><img src={navIcon1} alt="" onClick={handleY}/></a>
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
+              <HashLink to='#connect' onClick={handleW}>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
             </span>
