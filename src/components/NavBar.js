@@ -16,12 +16,22 @@ export const NavBar = () => {
 
     const handleY = (event) => {
         event.preventDefault();
-        window.open("http://www.youtube.com","_blank")
+        window.open("https://youtube.com/@takoosolutions?si=BpumcBlXL2rdGuE2","_blank")
         //window.location.href = 'https://reactjs.org';
     };
     const handleW = (event) => {
         event.preventDefault();
         window.open("https://wa.me/+201099845832","_blank")
+        //window.location.href = 'https://reactjs.org';
+    };
+    const handleF = (event) => {
+        event.preventDefault();
+        window.open("https://web.facebook.com/mo7amedgomaa7?mibextid=ZbWKwL&_rdc=1&_rdr","_blank")
+        //window.location.href = 'https://reactjs.org';
+    };
+    const handleI = (event) => {
+        event.preventDefault();
+        window.open("https://www.instagram.com/mo7amedgomaa7/?igsh=aDdmd3hqbm90eGl5","_blank")
         //window.location.href = 'https://reactjs.org';
     };
 
@@ -62,9 +72,9 @@ export const NavBar = () => {
                         </Nav>
                         <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" onClick={handleY}/></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a><img src={navIcon1} alt="" onClick={handleY}/></a>
+                <a><img src={navIcon2} alt="" onClick={handleF}/></a>
+                <a><img src={navIcon3} alt="" onClick={handleI}/></a>
               </div>
               <HashLink to='#connect' onClick={handleW}>
                 <button className="vvd"><span>Let’s Connect</span></button>
