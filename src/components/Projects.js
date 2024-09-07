@@ -16,10 +16,10 @@ export const Projects = () => {
 
   useEffect(() => {
     // Fetch the content of the Google Docs file
-    const fetchProjectsData = async () => {
+    const fetchRealsData = async () => {
       try {
         const response = await fetch(
-            "https://docs.google.com/document/d/1LoMeG8jWIoc0hIMiGtI2xyJPqYQdnS6_uMY0nsd5HCE/export?format=txt"
+            "https://docs.google.com/document/d/1mdGJcTvMDhD-6FY_pkcGuI-knCbwetbY6MktX2Q3M9k/edit?usp=sharing"
         );
         const text = await response.text();
 
@@ -33,15 +33,15 @@ export const Projects = () => {
       }
     };
 
-    fetchProjectsData();
+    fetchRealsData();
   }, []);
 
   useEffect(() => {
     // Fetch the content of the Google Docs file
-    const fetchProjectsData = async () => {
+    const fetchLogosData = async () => {
       try {
         const response = await fetch(
-            'https://docs.google.com/document/d/1bei-hrabZZD_HdLcz8RodyBdJP_245zMYtbGQn5CC0M/export?format=txt'
+            'https://docs.google.com/document/d/1zQgYz8UCVOszWWPSL8m__rgFUDq81VluyHavTVfXKQs/edit?usp=sharing'
         );
         const text = await response.text();
 
@@ -55,7 +55,7 @@ export const Projects = () => {
       }
     };
 
-    fetchProjectsData();
+    fetchLogosData();
   }, []);
 
   return (
